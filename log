@@ -247,3 +247,9 @@ treemap.c:144:13: error: assignment to ‘TreeNode *’ from ‘int’ makes poi
   144 |         aux = minimun(aux);
       |             ^
 76ab244
+Fri May  1 10:26:44 PM UTC 2026: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  16|4
+total_score: 28/60
+ef57871
