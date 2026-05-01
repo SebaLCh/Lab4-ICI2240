@@ -140,3 +140,14 @@ treemap.c:70:5: error: control reaches end of non-void function [-Werror=return-
       |     ^
 cc1: all warnings being treated as errors
 cb9f7d9
+Fri May  1 09:37:24 PM UTC 2026: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:63:12: error: implicit declaration of function ‘isEqual’; did you mean ‘is_equal’? [-Wimplicit-function-declaration]
+   63 |         if(isEqual(tree, key, aux->pair->key) == 1){
+      |            ^~~~~~~
+      |            is_equal
+504fe8a
