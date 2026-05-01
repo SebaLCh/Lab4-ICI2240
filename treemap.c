@@ -90,12 +90,13 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
             }
             else aux = aux->left;
         }
-        else if(tree->lower_than(aux->pair->key, key)) 
+        else if(tree->lower_than(aux->pair->key, key)){
             if(aux->right == NULL){
                 aux->right = nodo;
                 return;
             }
             else aux = aux->right;
+        }
     }
     return;
 
