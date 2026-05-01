@@ -194,7 +194,7 @@ Pair * firstTreeMap(TreeMap * tree) {
     
     TreeNode *aux = tree->root;
     aux = minimum(aux);
-    return aux;
+    return aux->pair;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
