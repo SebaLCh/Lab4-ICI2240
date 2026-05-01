@@ -61,7 +61,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     TreeNode *aux = tree->root;
     while(aux != NULL){
         int cont = 0;
-        printf("%d", &cont);
+        printf("%d", cont);
         if(key < aux->pair->key) aux = aux->left;
         else if(key > aux->pair->key) aux = aux->right;
         else{
