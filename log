@@ -117,3 +117,26 @@ Fri May  1 09:31:39 PM UTC 2026:
  tests:  11|6
 total_score: 15/60
 02a60aa
+Fri May  1 09:36:46 PM UTC 2026: 
+ treemap.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:63:12: error: implicit declaration of function ‘isEqual’; did you mean ‘is_equal’? [-Wimplicit-function-declaration]
+   63 |         if(isEqual(tree, key, aux->pair->key) == 1){
+      |            ^~~~~~~
+      |            is_equal
+treemap.c: At top level:
+treemap.c:71:5: error: expected identifier or ‘(’ before ‘return’
+   71 |     return NULL;
+      |     ^~~~~~
+treemap.c:72:1: error: expected identifier or ‘(’ before ‘}’ token
+   72 | }
+      | ^
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:70:5: error: control reaches end of non-void function [-Werror=return-type]
+   70 |     }
+      |     ^
+cc1: all warnings being treated as errors
+cb9f7d9
