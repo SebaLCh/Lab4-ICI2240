@@ -439,3 +439,13 @@ treemap.c:201:24: error: ‘current’ undeclared (first use in this function)
       |                        ^~~~~~~
 treemap.c:201:24: note: each undeclared identifier is reported only once for each function it appears in
 57fb01d
+Fri May  1 11:55:45 PM UTC 2026: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:201:38: error: lvalue required as left operand of assignment
+  201 |     if(tree == NULL || tree->current = NULL) return NULL;
+      |                                      ^
+ea1bc0c

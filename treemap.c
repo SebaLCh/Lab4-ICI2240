@@ -198,7 +198,7 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-    if(tree == NULL || current = NULL) return NULL;
+    if(tree == NULL || tree->current = NULL) return NULL;
     
     TreeNode *current = tree->current;
     TreeNode *next;
