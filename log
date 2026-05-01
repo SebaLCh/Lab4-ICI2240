@@ -340,3 +340,9 @@ treemap.c:210:9: error: expected ‘,’ or ‘;’ before ‘while’
   210 |         while(aux->parent != NULL && aux->pair->key < current->pair->key){
       |         ^~~~~
 b8e39c5
+Fri May  1 11:18:47 PM UTC 2026: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  20|2
+total_score: 40/60
+ac421d9
