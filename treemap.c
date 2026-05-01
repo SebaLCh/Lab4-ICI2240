@@ -212,7 +212,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         }
         next = aux;
     }
-    //tree->current = next;
+    tree->current = next;
     return next->pair;
 }
 
