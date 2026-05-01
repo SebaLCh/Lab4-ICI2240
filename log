@@ -157,3 +157,25 @@ Fri May  1 09:37:42 PM UTC 2026:
  tests:  11|6
 total_score: 15/60
 0e89f72
+Fri May  1 09:46:07 PM UTC 2026: 
+ treemap.c | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:79:29: error: ‘return’ with a value, in function returning void [-Wreturn-mismatch]
+   79 |     if(tree == NULL) return NULL;
+      |                             ^~~~
+treemap.c:78:6: note: declared here
+   78 | void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      |      ^~~~~~~~~~~~~
+treemap.c:80:22: error: implicit declaration of function ‘createNodo’; did you mean ‘createTreeNode’? [-Wimplicit-function-declaration]
+   80 |     TreeNode *nodo = createNodo(key, value);
+      |                      ^~~~~~~~~~
+      |                      createTreeNode
+treemap.c:80:22: error: initialization of ‘TreeNode *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+treemap.c:93:16: error: suggest explicit braces to avoid ambiguous ‘else’ [-Werror=dangling-else]
+   93 |         else if(tree->lower_than(aux->pair->key, key))
+      |                ^
+cc1: all warnings being treated as errors
+bb5f6de
