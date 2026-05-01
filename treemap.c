@@ -213,6 +213,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         next = aux;
     }
     tree->current = next;
+    printf("hola");
     return next->pair;
 }
 
