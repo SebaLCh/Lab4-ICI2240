@@ -60,12 +60,15 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     if(tree == NULL) return NULL;
     TreeNode *aux = tree->root;
     while(aux != NULL){
+        int cont = 0;
+        printf("%d", &cont);
         if(key < aux->pair->key) aux = aux->left;
         else if(key > aux->pair->key) aux = aux->right;
         else{
             tree->current = aux;
             return aux->pair;
         }
+        cont++;
     }
     return NULL;
 }
