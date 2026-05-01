@@ -449,3 +449,9 @@ treemap.c:201:38: error: lvalue required as left operand of assignment
   201 |     if(tree == NULL || tree->current = NULL) return NULL;
       |                                      ^
 ea1bc0c
+Fri May  1 11:55:55 PM UTC 2026: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  22|2
+total_score: 43/60
+ccbc480
