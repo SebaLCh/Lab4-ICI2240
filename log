@@ -91,3 +91,13 @@ Fri May  1 09:23:18 PM UTC 2026:
  tests:  4|7
 total_score: 5/60
 91ecda4
+Fri May  1 09:29:59 PM UTC 2026: 
+ treemap.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:63:12: error: implicit declaration of function ‘lower_than_int’ [-Wimplicit-function-declaration]
+   63 |         if(lower_than_int(key, aux->pair->key)) aux = aux->left;
+      |            ^~~~~~~~~~~~~~
+3642175
