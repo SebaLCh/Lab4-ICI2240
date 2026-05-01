@@ -201,7 +201,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     if(tree == NULL) return NULL;
     
     TreeNode *current = tree->current;
-    TreeNode *next;
+    TreeNode *next  = current;
     if(current->right != NULL){
         next = minimum(current->right);
     }
