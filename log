@@ -364,3 +364,13 @@ Fri May  1 11:24:29 PM UTC 2026:
  tests:  22|2
 total_score: 43/60
 db6d2b7
+Fri May  1 11:29:39 PM UTC 2026: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:210:30: error: implicit declaration of function ‘lower_than’ [-Wimplicit-function-declaration]
+  210 |         while(aux != NULL && lower_than(aux->pair->key, current->pair->key) == 1){
+      |                              ^~~~~~~~~~
+148dd61

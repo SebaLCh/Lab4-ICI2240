@@ -207,7 +207,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     else{
         TreeNode *aux = current->parent;
-        while(aux != NULL || aux->pair->key < current->pair->key){
+        while(aux != NULL && lower_than(aux->pair->key, current->pair->key) == 1){
             aux = aux->parent;
         }
         next = aux;
