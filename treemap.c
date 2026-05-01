@@ -60,8 +60,8 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     if(tree == NULL) return NULL;
     TreeNode *aux = tree->root;
     while(aux != NULL){
-        if(lower_than(key, aux->pair->key)) aux = aux->left;
-        else if(lower_than(aux->pair->key, key)) aux = aux->right;
+        if(tree->lower_than(key, aux->pair->key)) aux = aux->left;
+        else if(tree->lower_than(aux->pair->key, key)) aux = aux->right;
         else{
             tree->current = aux;
             return aux->pair;
