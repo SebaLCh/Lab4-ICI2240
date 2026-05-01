@@ -212,7 +212,7 @@ Pair * nextTreeMap(TreeMap * tree) {
             if(aux->right != NULL) aux = aux->right;
             else break;
         }
-        if(aux > current && aux < next) next = aux;
+        if(aux->pair->key > current->pair->key && aux->pair->key < next->pair->key) next = aux;
     }
     return next->pair;
 }
