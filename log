@@ -101,3 +101,13 @@ treemap.c:63:12: error: implicit declaration of function ‘lower_than_int’ [-
    63 |         if(lower_than_int(key, aux->pair->key)) aux = aux->left;
       |            ^~~~~~~~~~~~~~
 3642175
+Fri May  1 09:31:04 PM UTC 2026: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:63:12: error: implicit declaration of function ‘lower_than’ [-Wimplicit-function-declaration]
+   63 |         if(lower_than(key, aux->pair->key)) aux = aux->left;
+      |            ^~~~~~~~~~
+849ec37
