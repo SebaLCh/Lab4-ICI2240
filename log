@@ -292,3 +292,13 @@ Fri May  1 10:39:08 PM UTC 2026:
  tests:  18|3
 total_score: 35/60
 e47a9d8
+Fri May  1 10:42:21 PM UTC 2026: 
+ treemap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘firstTreeMap’:
+treemap.c:197:12: error: returning ‘TreeNode *’ from a function with incompatible return type ‘Pair *’ [-Wincompatible-pointer-types]
+  197 |     return aux;
+      |            ^~~
+406dfe3
