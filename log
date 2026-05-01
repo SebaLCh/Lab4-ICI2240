@@ -233,3 +233,17 @@ Fri May  1 09:55:04 PM UTC 2026:
  tests:  15|4
 total_score: 25/60
 b29ea83
+Fri May  1 10:26:03 PM UTC 2026: 
+ treemap.c | 28 ++++++++++++++++++++++++++++
+ 1 file changed, 28 insertions(+)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:144:15: error: implicit declaration of function ‘minimun’; did you mean ‘minimum’? [-Wimplicit-function-declaration]
+  144 |         aux = minimun(aux);
+      |               ^~~~~~~
+      |               minimum
+treemap.c:144:13: error: assignment to ‘TreeNode *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  144 |         aux = minimun(aux);
+      |             ^
+76ab244
