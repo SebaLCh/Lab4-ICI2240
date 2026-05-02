@@ -230,10 +230,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
         TreeNode *aux = tree->root;
         Pair *ub_node = aux->pair;
         while(aux != NULL){
+            if(aux->pair->key > key && aux->pair->key < ub_node->key) ub_node = aux->pair;
+            
             if(tree->lower_than(key, aux->pair->key)) aux = aux->left;
             else if(tree->lower_than(aux->pair->key, key)) aux = aux->right;
-
-            if(aux->pair->key > key && aux->pair->key < ub_node->key) ub_node = aux->pair;
+            
         }
         parB = ub_node;
     }
