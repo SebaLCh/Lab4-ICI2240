@@ -207,13 +207,12 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     else{ 
         TreeNode *aux = current->parent;
-        while(aux != NULL && tree->lower_than(aux->pair->key, current->pair->key) == 1){
+        while(aux != NULL && tree->lower_than(aux->pair->key, current->pair->key) == 0){
             aux = aux->parent;
         }
         next = aux;
     }
     tree->current = next;
-    printf("hola");
     return next->pair;
 }
 
