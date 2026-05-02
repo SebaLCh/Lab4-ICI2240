@@ -537,3 +537,13 @@ Sat May  2 12:42:39 AM UTC 2026:
  1 file changed, 2 insertions(+), 3 deletions(-)
  tests:  0|0
 c43d393
+Sat May  2 12:43:09 AM UTC 2026: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:231:25: error: initialization of ‘Pair *’ from incompatible pointer type ‘TreeNode *’ [-Wincompatible-pointer-types]
+  231 |         Pair *ub_node = aux;
+      |                         ^~~
+3e3fdc0
