@@ -228,12 +228,15 @@ Pair * upperBound(TreeMap * tree, void* key) {
     Pair *parB = searchTreeMap(tree, key);
     if(parB == NULL){
         TreeNode *aux = tree->root;
-        Pair *ub_node = aux->pair;
+        Pair *ub_node = NULL;
         while(aux != NULL){
-            if(tree->lower_than(key, aux->pair->key)) aux = aux->left;
-            else if(tree->lower_than(aux->pair->key, key)) aux = aux->right;
+            if(tree->lower_than(key, aux->pair->key)) {
+                ub_node = aux->pair;
+                aux = aux->left
+            }
+                
+            else aux = aux->right;
             
-            if(tree->lower_than(key, aux->pair->key) && tree->lower_than(aux->pair->key, ub_node->key)) ub_node = aux->pair;
         }
         parB = ub_node;
     }
